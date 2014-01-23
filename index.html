@@ -1,0 +1,40 @@
+<html>
+	<head>
+	<title>Online Exam</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	</head>
+	<body>
+		<div>
+			<div>
+				<div><form method = "post" id = "logForm" action = "page/logProcess.php">
+					<input type = "text" placeholder = "name" id = "userlog" name = "userlog"><br>
+					<input type = "password" placeholder = "password" id = "passlog" name = "passlog"><br>
+					<button id = "loginbtn">Login</button>
+					
+					</form>
+					<div id = "warning"></div>
+					<button id = "signup">Sign up</button>
+				</div>
+			</div>
+			<div id = "regField">
+				<div>
+					<form method = "POST" action = "page/regProcess.php" id = "regForm">
+						<input type = "text" placeholder = "First Name" name = "fname" id = "fname"><br>
+						<input type = "text" placeholder = "Middle Name" name = "mname" id = "mname"><br>
+						<input type = "text" placeholder = "Last Name" name = "lname" id = "lname"><br>
+						<input type = "email" placeholder = "Email Address" name = "email" id = "email"><br>
+						<input type = "text" placeholder = "User Name" name = "username" id = "username"><br>
+						<input type = "password" placeholder = "Password" name = "pass" id = "password"><br>
+						<input type = "password" placeholder = "Confirm Password" name = "pass1" id = "password1">
+						<button id = "reg">Register</button>
+					</form>
+				</div>
+				<div id = "ack">
+				</div>
+			</div>
+	</div>
+		<script type="text/javascript" src="assets/js/jquery.1.10.2.js"></script>
+		<script type="text/javascript" src="assets/js/reg.js"></script>
+		<script type="text/javascript" src="assets/js/log.js"></script>
+	</body>
+</html>
